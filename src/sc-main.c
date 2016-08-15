@@ -125,7 +125,7 @@ int sc_main(int argc, char **argv)
 			    ("cannot remain in %s, moving to the void directory",
 			     vanilla_cwd);
 			if (chdir(SC_VOID_DIR) != 0) {
-				die("unable to change directory to %s",
+				die("cannot change directory to %s",
 				    SC_VOID_DIR);
 			}
 			debug("successfully moved to %s", SC_VOID_DIR);
